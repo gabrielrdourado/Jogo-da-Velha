@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<script src="jquery-2.2.1.js"></script>
+		<script src="jogo.js"></script>
+	</head>
+
+	<body>
+
+		<div id="pagina_inicial" align="center">
+			<table width="500px">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">JOGO DA VELHA</td>
+					</tr>
+
+					<tr>
+						<td align="center">
+							<img src="imagens/jogador_1.png"/>
+							<br/>
+							<input id="nick_jogador_1" type="text" maxlength="10" placeholder="nick do jogador 1"/>
+						</td>
+						<td align="center"><img id="btn_iniciar" src="imagens/iniciar.png"/></td>
+						<td align="center">
+							<img src="imagens/jogador_2.png"/>
+							<br/>
+							<input id="nick_jogador_2" type="text" maxlength="10" placeholder="nick do jogador 2"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div id="palco_jogo" align="center" style="margin-top: 50px; display: none;">
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_1.png"/>
+				<br/>
+				<span id="nickingame_jogador_1"></span>
+			</div>
+
+			<div style="display: inline-block;">
+				<table style="margin: 0px 30px 0px 30px">
+					<tbody>
+						<tr>
+							<td class="jogada" id="a-1" style="border-bottom: 2px solid black; border-right: 2px solid black">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+							<td class="jogada" id="a-2" style="border-bottom: 2px solid black; border-right: 2px solid black">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+							<td class="jogada" id="a-3" style="border-bottom: 2px solid black;">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="jogada" id="b-1" style="border-bottom: 2px solid black; border-right: 2px solid black">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+							<td class="jogada" id="b-2" style="border-bottom: 2px solid black; border-right: 2px solid black">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+							<td class="jogada" id="b-3" style="border-bottom: 2px solid black;">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="jogada" id="c-1" style="border-right: 2px solid black">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+							<td class="jogada" id="c-2" style="border-right: 2px solid black">
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+							<td class="jogada" id="c-3" >
+								<div style="height: 100px; width: 100px"></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_2.png"/>
+				<br/>
+				<span id="nickingame_jogador_2"></span>
+			</div>
+		</div>
+
+	</body>
+</html>
